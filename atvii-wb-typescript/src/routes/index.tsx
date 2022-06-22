@@ -17,10 +17,13 @@ import { VisualizarServico } from '../pages/Visualizar/servicos';
 import { EditarCliente } from '../pages/Editar/clientes';
 import { EditarProduto } from '../pages/Editar/produtos';
 import { EditarServico } from '../pages/Editar/servicos';
+import { Component } from 'react';
 
-function AppRoutes() {
-    return (
-        <Router>
+export class  AppRoutes extends Component {
+    render(){
+
+        return (
+            <Router>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/clientes' element={<Clientes/>}/>
@@ -40,5 +43,4 @@ function AppRoutes() {
         </Router>
     );
 }
-
-export default AppRoutes;
+}

@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AppRoutes from './routes';
+import { Component } from 'react';
+import { AppRoutes } from './routes';
 
-function App() {
-  return (
-    <div className="App">
+export class App extends Component {
+  render(){
+
+    return (
+      <div className="App">
       <AppRoutes/>
     </div>
   );
 }
-
-export default App;
+}
